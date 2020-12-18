@@ -5,7 +5,6 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { CrewComponent } from './crew/crew.component';
 import { EquipmentComponent } from './equipment/equipment.component';
-import { ExpiramentsComponent } from './expiraments/expiraments.component';
 import { ExperimentsComponent } from './experiments/experiments.component';
 
 @NgModule({
@@ -14,7 +13,6 @@ import { ExperimentsComponent } from './experiments/experiments.component';
     HeaderComponent,
     CrewComponent,
     EquipmentComponent,
-    ExpiramentsComponent,
     ExperimentsComponent
   ],
   imports: [
