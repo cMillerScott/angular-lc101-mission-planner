@@ -1,0 +1,18 @@
+.container {
+  text-align: center;
+  border-top: ridge 5px;
+  border-left: ridge 5px;
+  border-right: ridge 5px;
+  border-bottom: ridge 1px;
+  background-color: darkcyan;
+}
+
+#head {
+  text-transform: uppercase;
+}
+
+#miniCont {
+  background-color: cyan;
+  border-top: ridge 4px;
+  padding-bottom: 1px;
+}

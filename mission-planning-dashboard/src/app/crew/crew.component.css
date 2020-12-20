@@ -1,0 +1,18 @@
+.box {
+  border: solid 3px;
+  padding: 5%;
+  text-align: center;
+  background-color: cyan;
+  border-radius: 15%;
+}
+
+#crew {
+  text-decoration: underline;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
