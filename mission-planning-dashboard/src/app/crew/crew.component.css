@@ -3,10 +3,13 @@
   padding: 5%;
   text-align: center;
   background-color: cyan;
+  opacity: .8;
   border-radius: 15%;
 }
 
 #crew {
+  color:black;
+  text-shadow: 1px 1px darkgoldenrod;
   text-decoration: underline;
 }
 

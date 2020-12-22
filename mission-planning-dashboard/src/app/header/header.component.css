@@ -8,11 +8,24 @@
 }
 
 #head {
+  color: darkslategray;
+  text-shadow: 2px 2px black;
   text-transform: uppercase;
 }
 
 #miniCont {
   background-color: cyan;
+  opacity: .8;
   border-top: ridge 4px;
   padding-bottom: 1px;
+}
+
+#mission {
+  color: maroon;
+  text-shadow: 2px 2px rgb(119, 133, 133);
+}
+
+#rocket {
+  color: darkred;
+  text-shadow: 2px 2px darkcyan;
 }
