@@ -2,10 +2,36 @@
   <h1 id="head"><b>Mission Planning Dashboard</b></h1>
   <div id="miniCont">
     <h3 id="mission">
-      <b>MISSION NAME: {{ missionName }}</b>
+      <b>Mission:</b>
+      <span *ngIf="!editingMission; else editMissionBlock">
+        <span class="editable-text" (click)="editingMission = true">
+            <b> {{ missionName }}</b>
+        </span>
+      </span>
+      <ng-template #editMissionBlock>
+        <input
+          #mission
+          (keyup.enter)="updateMission(mission.value)"
+          value="{{ missionName }}"
+        />
+        <button (click)="updateMission(mission.value)">save</button>
+      </ng-template>
     </h3>
     <h3 id="rocket">
-      <b>CARRIER ROCKET: {{ rocketName }}</b>
+      <b>CARRIER ROCKET:</b>
+      <span *ngIf="!editingRocket; else editRocketBlock">
+        <span class="editable-text" (click)="editingRocket = true">
+          <b> {{ rocketName }}</b>
+        </span>
+      </span>
+      <ng-template #editRocketBlock>
+        <input
+          #rocket
+          (keyup.enter)="updateRocket(rocket.value)"
+          value="{{ rocketName }}"
+        />
+        <button (click)="updateRocket(rocket.value)">save</button>
+      </ng-template>
     </h3>
   </div>
 </div>
